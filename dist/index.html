@@ -7,22 +7,48 @@
     <link rel="stylesheet" href="output.css" />
   </head>
   <body class="bg-black mx-auto w-full text-white">
+    <!-- Component 1 -->
+    <!-- Navbar -->
     <div class="fixed top-0 flex flex-wrap justify-between w-full shrink-0">
+      <div class="size-28">
+        <img
+          class="object-scale-down"
+          src="../img/logo.png"
+          alt="Logo of Weight Wise"
+        />
+      </div>
       <div
         class="flex text-white items-center justify-between text-lg gap-10 m-4"
       >
-        <a href="#home">Home</a>
-        <a href="#product">Product</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
+        <a class="scroll-smooth hover:text-red-600" href="#home">Home</a>
+        <a class="scroll-smooth hover:text-red-600" href="#product">Product</a>
+        <a class="scroll-smooth hover:text-red-600" href="#about">About Us</a>
+        <a class="scroll-smooth hover:text-red-600" href="#contact">Contact</a>
       </div>
 
       <div
-        class="flex text-gray-400 gap-7 items-center justify-center text-lg m-4"
+        class="flex text-black gap-7 items-center justify-center text-lg m-4"
       >
-        <button>Login</button>
-        <button>Sign Up</button>
+        <button class="bg-red-600 rounded-md border-red-600 border-4 px-2 py-1">
+          Login
+        </button>
+        <button class="bg-red-600 rounded-md border-red-600 border-4 px-2 py-1">
+          Sign Up
+        </button>
       </div>
     </div>
+
+    <!-- Component 2 -->
+    <!-- Product Section -->
+    <section>
+      <div class="m-2 grid-rows-2 items-center justify-center text-base gap-5">
+        <div class="size-10">
+          <img class="object-scale-down" src="../img/adjDumbell3.png" alt="" />
+        </div>
+        <div>
+          <p>Hello</p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

@@ -6,49 +6,130 @@
     <title>Document</title>
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="bg-black mx-auto w-full text-white">
+  <body class="bg-black">
     <!-- Component 1 -->
-    <!-- Navbar -->
-    <div class="fixed top-0 flex flex-wrap justify-between w-full shrink-0">
-      <div class="size-28">
-        <img
-          class="object-scale-down"
-          src="../img/logo.png"
-          alt="Logo of Weight Wise"
-        />
-      </div>
+    <div class="mx-auto bg-black">
+      <!-- Navbar -->
       <div
-        class="flex text-white items-center justify-between text-lg gap-10 m-4"
+        class="fixed top-0 flex flex-wrap items-center justify-between w-full shrink-0"
       >
-        <a class="scroll-smooth hover:text-red-600" href="#home">Home</a>
-        <a class="scroll-smooth hover:text-red-600" href="#product">Product</a>
-        <a class="scroll-smooth hover:text-red-600" href="#about">About Us</a>
-        <a class="scroll-smooth hover:text-red-600" href="#contact">Contact</a>
-      </div>
+        <div class="size-28">
+          <img
+            class="object-scale-down"
+            src="../img/logo.png"
+            alt="Logo of Weight Wise"
+          />
+        </div>
+        <div class="hidden md:flex items-center justify-between gap-8">
+          <a
+            class="scroll-smooth font-normal text-white hover:text-red-600"
+            href="#home"
+            >Home</a
+          >
+          <a
+            class="scroll-smooth font-normal text-white hover:text-red-600"
+            href="#product"
+            >Product</a
+          >
+          <a
+            class="scroll-smooth font-normal text-white hover:text-red-600"
+            href="#about"
+            >About Us</a
+          >
+          <a
+            class="scroll-smooth font-normal text-white hover:text-red-600"
+            href="#contact"
+            >Contact</a
+          >
+        </div>
 
-      <div
-        class="flex text-black gap-7 items-center justify-center text-lg m-4"
-      >
-        <button class="bg-red-600 rounded-md border-red-600 border-4 px-2 py-1">
-          Login
+        <div
+          class="hidden md:flex text-black gap-7 items-center justify-center text-lg m-4"
+        >
+          <button
+            class="bg-red-600 rounded-md border-red-600 border-4 px-2 py-1"
+          >
+            Login
+          </button>
+          <button
+            class="bg-red-600 rounded-md border-red-600 border-4 px-2 py-1"
+          >
+            Sign Up
+          </button>
+        </div>
+
+        <button class="p-4 md:hidden text-white" id="mobile-menu-toggle">
+          <svg
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="h-6 w-6"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_429_11066)">
+              <path
+                d="M3 6.00092H21M3 12.0009H21M3 18.0009H21"
+                stroke="#292929"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_429_11066">
+                <rect
+                  width="24"
+                  height="24"
+                  fill="white"
+                  transform="translate(0 0.000915527)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
         </button>
-        <button class="bg-red-600 rounded-md border-red-600 border-4 px-2 py-1">
-          Sign Up
-        </button>
+
+        <div
+          class="absolute hidden md:hidden flex md:flex flex-col items-start justify-center w-full gap-5 overflow-hidden bg-black max-h-screen top-full px-4 py-8 shadow-main"
+          id="mobile-menu"
+        >
+          <a
+            class="scroll-smooth font-normal text-white hover:text-red-600"
+            href="#home"
+            >Home</a
+          >
+          <a
+            class="scroll-smooth font-normal text-white hover:text-red-600"
+            href="#product"
+            >Product</a
+          >
+          <a
+            class="scroll-smooth font-normal text-white hover:text-red-600"
+            href="#about"
+            >About Us</a
+          >
+          <a
+            class="scroll-smooth font-normal text-white hover:text-red-600"
+            href="#contact"
+            >Contact</a
+          >
+
+          <button
+            class="bg-red-600 rounded-md border-red-600 border-4 px-2 py-1"
+          >
+            Login
+          </button>
+          <button
+            class="bg-red-600 rounded-md border-red-600 border-4 px-2 py-1"
+          >
+            Sign Up
+          </button>
+        </div>
       </div>
     </div>
 
     <!-- Component 2 -->
     <!-- Product Section -->
-    <section>
-      <div class="m-2 grid-rows-2 items-center justify-center text-base gap-5">
-        <div class="size-10">
-          <img class="object-scale-down" src="../img/adjDumbell3.png" alt="" />
-        </div>
-        <div>
-          <p>Hello</p>
-        </div>
-      </div>
-    </section>
+    <section></section>
+    <script src="index.js"></script>
   </body>
 </html>
